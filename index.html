@@ -23,7 +23,7 @@
   .section-title { font-size:25px !important; line-height:32px !important; }
   .scenario-grid { table-layout:fixed !important; }
   .scenario-col { display:table-cell; box-sizing:border-box; }
-  .story-row { border-bottom:1px solid #DCE4E9; }
+  .story-row { table-layout:fixed !important; border-bottom:1px solid #DCE4E9; }
   .story-row:last-child { border-bottom:0; }
   .story-copy-cell, .story-media-cell { display:table-cell; box-sizing:border-box; vertical-align:top; }
   .story-copy-cell { width:56%; padding:0 24px 0 0; }
@@ -31,10 +31,11 @@
   .story-image { display:block; width:100%; max-width:185px !important; height:auto; box-shadow:0 5px 12px rgba(82,91,101,.24); }
   .story-body { font-size:13px !important; line-height:21px !important; }
   .story-copy-table { height:auto !important; }
-  .story-title { font-style:italic !important; text-transform:uppercase; }
-  .story-title-long { font-size:13px !important; line-height:18px !important; letter-spacing:-.15px !important; }
-  .story-highlight { display:inline-block !important; position:relative; white-space:nowrap !important; background-color:#ABCD03; color:#122B57; padding:1px 4px 2px; border-radius:3px 1px 3px 2px; transform:skewX(-5deg) rotate(-.7deg); clip-path:polygon(1% 13%,98% 0,100% 80%,96% 100%,4% 94%,0 22%); }
-  .story-highlight-text { display:inline-block; transform:skewX(5deg) rotate(.7deg); }
+  .story-title { min-height:40px; margin-bottom:4px !important; font-size:16px !important; line-height:21px !important; letter-spacing:.1px !important; font-style:italic !important; text-transform:uppercase; color:#122B57 !important; }
+  .story-title-long { font-size:16px !important; line-height:21px !important; letter-spacing:.1px !important; }
+  .story-highlight { display:inline !important; position:static; white-space:normal !important; background-color:transparent; color:#122B57 !important; padding:0; border-radius:0; transform:none; clip-path:none; }
+  .story-highlight-text { display:inline !important; transform:none; }
+  .story-mobile-suffix { display:inline; margin-left:4px; }
   .body-copy { text-align:justify !important; }
   .footer-policy-links { white-space:nowrap; }
   @media only screen and (min-width:581px) and (max-width:610px) {
@@ -60,8 +61,9 @@
     .scenario-col:first-child { padding-top:0 !important; }
     .scenario-col:last-child { padding-bottom:0 !important; border-bottom:0 !important; }
     .scenario-image { width:100% !important; max-width:580px !important; margin:0 0 15px !important; }
-    .story-title { font-size:16px !important; line-height:20px !important; }
+    .story-title { min-height:40px; margin-bottom:9px !important; font-size:16px !important; line-height:20px !important; }
     .story-title-long { font-size:14px !important; line-height:19px !important; }
+    .story-mobile-suffix { display:block !important; margin-left:0 !important; }
     .story-image { max-width:203px !important; }
     .story-body { font-size:11px !important; line-height:17px !important; }
     .story-copy-cell, .story-media-cell { display:table-cell !important; vertical-align:top !important; }
@@ -200,7 +202,7 @@
               <tr>
                 <td class="story-copy-cell" width="56%" valign="top" style="width:56%;padding:26px 24px 26px 0;font-family:Arial,Helvetica,sans-serif;">
                   <table class="story-copy-table" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="height:auto;"><tr><td valign="top" style="font-family:Arial,Helvetica,sans-serif;">
-                    <h3 class="story-title" style="margin:0 0 9px;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:19px;font-weight:700;color:#122B57;"><span class="story-highlight"><span class="story-highlight-text">Fatigue Protection</span></span> for Harsh Shifts</h3>
+                    <h3 class="story-title" style="margin:0 0 9px;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:19px;font-weight:700;color:#122B57;"><span class="story-highlight"><span class="story-highlight-text">Fatigue Protection</span></span><span class="story-mobile-suffix">for Mining</span></h3>
                     <p class="body-copy story-body" style="margin:0 0 5px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:17px;font-weight:400;color:#536577;">Mining vehicles run 24/7 in demanding environments. Streamax DMS monitors fatigue and distraction in real time, keeping continuous watch and alerting drivers before risks escalate.</p>
                   </td></tr><tr><td valign="bottom" style="font-family:Arial,Helvetica,sans-serif;"><a href="https://www.streamax.com/resources-blog-insight/using-dms-in-24-7-mining-operations.html" target="_blank" style="font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:15px;font-weight:700;color:#122B57;text-decoration:underline;text-underline-offset:3px;">Explore More</a></td></tr></table>
                 </td>
@@ -214,7 +216,7 @@
               <tr>
                 <td class="story-copy-cell" width="56%" valign="top" style="width:56%;padding:26px 24px 26px 0;font-family:Arial,Helvetica,sans-serif;">
                   <table class="story-copy-table" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="height:auto;"><tr><td valign="top" style="font-family:Arial,Helvetica,sans-serif;">
-                    <h3 class="story-title story-title-long" style="margin:0 0 9px;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:19px;font-weight:700;color:#122B57;">Prevents Students<br /><span class="story-highlight"><span class="story-highlight-text">From Being Left</span></span></h3>
+                    <h3 class="story-title story-title-long" style="margin:0 0 9px;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:19px;font-weight:700;color:#122B57;">No Students Left on Board</h3>
                     <p class="body-copy story-body" style="margin:0 0 5px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:17px;font-weight:400;color:#536577;">Streamax combines driver inspection, motion sensing and AI-based student detection to identify moving and stationary students and add multiple layers of protection after shutdown.</p>
                   </td></tr><tr><td valign="bottom" style="font-family:Arial,Helvetica,sans-serif;"><a href="https://www.streamax.com/resources-blog-technology/prevent-students-from-being-left-on-buses.html" target="_blank" style="font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:15px;font-weight:700;color:#122B57;text-decoration:underline;text-underline-offset:3px;">Explore More</a></td></tr></table>
                 </td>
