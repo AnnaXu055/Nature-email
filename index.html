@@ -28,13 +28,14 @@
   .story-copy-cell, .story-media-cell { display:table-cell; box-sizing:border-box; vertical-align:top; }
   .story-copy-cell { width:56%; padding:0 24px 0 0; }
   .story-media-cell { width:44%; padding:0 0 7px; }
-  .story-image { display:block; width:100%; max-width:203px; height:auto; box-shadow:0 5px 12px rgba(82,91,101,.24); }
+  .story-image { display:block; width:100%; max-width:185px !important; height:auto; box-shadow:0 5px 12px rgba(82,91,101,.24); }
+  .story-body { font-size:13px !important; line-height:21px !important; }
   .story-copy-table { height:auto !important; }
   .story-title { font-style:italic !important; text-transform:uppercase; }
+  .story-title-long { font-size:13px !important; line-height:18px !important; letter-spacing:-.15px !important; }
   .story-highlight { display:inline-block !important; position:relative; white-space:nowrap !important; background-color:#ABCD03; color:#122B57; padding:1px 4px 2px; border-radius:3px 1px 3px 2px; transform:skewX(-5deg) rotate(-.7deg); clip-path:polygon(1% 13%,98% 0,100% 80%,96% 100%,4% 94%,0 22%); }
   .story-highlight-text { display:inline-block; transform:skewX(5deg) rotate(.7deg); }
   .body-copy { text-align:justify !important; }
-  .cta-outline { display:inline-block; border:2px solid #ABCD03; border-radius:28px; padding:10px 24px; color:#ABCD03; background-color:#122B57; text-decoration:none !important; }
   .footer-policy-links { white-space:nowrap; }
   @media only screen and (min-width:581px) and (max-width:610px) {
     .container { width:100% !important; max-width:100% !important; }
@@ -60,12 +61,13 @@
     .scenario-col:last-child { padding-bottom:0 !important; border-bottom:0 !important; }
     .scenario-image { width:100% !important; max-width:580px !important; margin:0 0 15px !important; }
     .story-title { font-size:16px !important; line-height:20px !important; }
+    .story-title-long { font-size:14px !important; line-height:19px !important; }
+    .story-image { max-width:203px !important; }
+    .story-body { font-size:11px !important; line-height:17px !important; }
     .story-copy-cell, .story-media-cell { display:table-cell !important; vertical-align:top !important; }
     .story-copy-table { height:auto !important; }
     .story-copy-cell { width:56% !important; padding:20px 14px 20px 0 !important; }
-    .story-media-cell { width:44% !important; padding:20px 0 27px !important; }
-    .story-row:first-of-type .story-copy-cell, .story-row:first-of-type .story-media-cell { padding-top:0 !important; }
-    .story-row:last-of-type .story-copy-cell, .story-row:last-of-type .story-media-cell { padding-bottom:0 !important; }
+    .story-media-cell { width:44% !important; padding:20px 0 !important; }
     .footer-cell { width:100% !important; max-width:100% !important; box-sizing:border-box !important; padding-left:16px !important; padding-right:16px !important; }
     .footer-tagline-row { width:auto !important; max-width:100% !important; table-layout:auto !important; }
     .footer-tagline-text { font-size:9px !important; line-height:13px !important; letter-spacing:.45px !important; white-space:nowrap !important; }
@@ -138,21 +140,20 @@
 
         <!-- ================= CASE STUDY ================= -->
         <tr>
-          <td class="content-pad" style="padding:38px 38px 36px;background-color:#FFFFFF;font-family:Arial,Helvetica,sans-serif;">
+          <td class="content-pad" style="padding:38px 38px 18px;background-color:#FFFFFF;font-family:Arial,Helvetica,sans-serif;">
             <h2 class="section-title" style="margin:0 0 17px;font-family:Arial,Helvetica,sans-serif;font-size:25px;line-height:32px;font-weight:700;letter-spacing:-.35px;color:#122B57;">Detection Is the First Step to Prevention</h2>
-            <p class="body-copy" style="margin:0 0 15px;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:25px;font-weight:400;color:#334456;">In its investigation of a fatal I-70 crash in Ohio, the U.S. National Transportation Safety Board (NTSB) found that driver inattention contributed to the crash, and that the truck lacked an in-vehicle driver monitoring system that could have alerted the driver to return attention to the road.</p>
-            <p class="body-copy" style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:23px;font-weight:700;color:#122B57;">The findings highlight the need for technologies that can detect driver risks and support timely intervention.</p>
+            <p class="body-copy" style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:25px;font-weight:400;color:#334456;">In a 2025 investigation of a fatal I-70 crash in Ohio, the U.S. National Transportation Safety Board (NTSB) found that <strong style="font-family:Arial,Helvetica,sans-serif;font-weight:700;color:#122B57;">driver inattention</strong> contributed to the crash and that the truck lacked an <strong style="font-family:Arial,Helvetica,sans-serif;font-weight:700;color:#122B57;">in-vehicle driver monitoring system</strong> that could have alerted the driver to return attention to the road, highlighting the need for technologies that can detect driver risks and support timely intervention.</p>
           </td>
         </tr>
         <tr>
-          <td class="content-pad" style="padding:0 38px 19px;background-color:#FFFFFF;font-family:Arial,Helvetica,sans-serif;font-size:0;line-height:0;">
-            <img src="assets/case-study-crash.png" width="580" alt="Crash-damaged coach bus in a workshop" style="display:block;width:100%;max-width:580px;height:auto;border:0;" />
+          <td class="content-pad" style="padding:0 46px 10px 30px;background-color:#FFFFFF;font-family:Arial,Helvetica,sans-serif;font-size:0;line-height:0;">
+            <img src="assets/case-study-crash.png" width="580" alt="Ohio charter bus crash news report" style="display:block;width:100%;max-width:580px;height:auto;border:0;" />
           </td>
         </tr>
 
         <!-- ================= PRODUCT CAPABILITY ================= -->
         <tr>
-          <td class="content-pad" style="padding:38px 38px 35px;background-color:#FFFFFF;font-family:Arial,Helvetica,sans-serif;">
+          <td class="content-pad" style="padding:19px 38px 35px;background-color:#FFFFFF;font-family:Arial,Helvetica,sans-serif;">
             <h2 class="section-title" style="margin:0 0 13px;font-family:Arial,Helvetica,sans-serif;font-size:25px;line-height:32px;font-weight:700;letter-spacing:-.35px;color:#122B57;">From Driver Monitoring to <span style="font-weight:700;color:#ABCD03;">Active Prevention</span></h2>
             <p class="body-copy" style="margin:0 0 25px;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:25px;font-weight:400;color:#334456;">Streamax combines <strong style="font-family:Arial,Helvetica,sans-serif;font-weight:700;color:#122B57;">DMS, ADAS and AI-powered perception</strong> to detect driver and road risks in real time, deliver timely warnings and support proactive safety intervention.</p>
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
@@ -183,13 +184,13 @@
             <!-- four story modules: left copy, right image on both desktop and mobile -->
             <table class="story-row" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-bottom:1px solid #DCE4E9;">
               <tr>
-                <td class="story-copy-cell" width="56%" valign="top" style="width:56%;padding:0 24px 0 0;font-family:Arial,Helvetica,sans-serif;">
+                <td class="story-copy-cell" width="56%" valign="top" style="width:56%;padding:26px 24px 26px 0;font-family:Arial,Helvetica,sans-serif;">
                   <table class="story-copy-table" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="height:auto;"><tr><td valign="top" style="font-family:Arial,Helvetica,sans-serif;">
                     <h3 class="story-title" style="margin:0 0 9px;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:19px;font-weight:700;color:#122B57;">Smarter <span class="story-highlight"><span class="story-highlight-text">Blind Spot Safety</span></span></h3>
-                    <p class="body-copy" style="margin:0 0 5px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:17px;font-weight:400;color:#536577;">Commercial trucks face persistent blind spots. Streamax combines cameras, radar and AI vision to detect hazards and deliver timely alerts, helping fleets reduce risk and improve driver confidence.</p>
-                  </td></tr><tr><td valign="bottom" style="font-family:Arial,Helvetica,sans-serif;"><a href="https://www.streamax.com/resources-blog-technology/blind-spot-detection-system-commercial-fleets.html" target="_blank" style="font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:15px;font-weight:700;color:#122B57;text-decoration:underline;text-underline-offset:3px;">Explore Safety</a></td></tr></table>
+                    <p class="body-copy story-body" style="margin:0 0 5px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:17px;font-weight:400;color:#536577;">Commercial trucks face persistent blind spots. Streamax combines cameras, radar and AI vision to detect hazards and deliver timely alerts, helping fleets reduce risk and improve driver confidence.</p>
+                  </td></tr><tr><td valign="bottom" style="font-family:Arial,Helvetica,sans-serif;"><a href="https://www.streamax.com/resources-blog-technology/blind-spot-detection-system-commercial-fleets.html" target="_blank" style="font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:15px;font-weight:700;color:#122B57;text-decoration:underline;text-underline-offset:3px;">Explore More</a></td></tr></table>
                 </td>
-                <td class="story-media-cell" width="44%" valign="top" style="width:44%;padding:0 0 7px;font-family:Arial,Helvetica,sans-serif;font-size:0;line-height:0;">
+                <td class="story-media-cell" width="44%" valign="top" style="width:44%;padding:26px 0;font-family:Arial,Helvetica,sans-serif;font-size:0;line-height:0;">
                   <img class="story-image" src="assets/story-01-provided.png" width="203" height="193" alt="Commercial truck driver travelling through rain" style="display:block;width:100%;max-width:203px;height:auto;border:0;box-shadow:0 5px 12px rgba(82,91,101,.24);" />
                 </td>
               </tr>
@@ -200,10 +201,10 @@
                 <td class="story-copy-cell" width="56%" valign="top" style="width:56%;padding:26px 24px 26px 0;font-family:Arial,Helvetica,sans-serif;">
                   <table class="story-copy-table" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="height:auto;"><tr><td valign="top" style="font-family:Arial,Helvetica,sans-serif;">
                     <h3 class="story-title" style="margin:0 0 9px;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:19px;font-weight:700;color:#122B57;"><span class="story-highlight"><span class="story-highlight-text">Fatigue Protection</span></span> for Harsh Shifts</h3>
-                    <p class="body-copy" style="margin:0 0 5px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:17px;font-weight:400;color:#536577;">Mining vehicles run 24/7 in demanding environments. Streamax DMS monitors fatigue and distraction in real time, keeping continuous watch and alerting drivers before risks escalate.</p>
-                  </td></tr><tr><td valign="bottom" style="font-family:Arial,Helvetica,sans-serif;"><a href="https://www.streamax.com/resources-blog-insight/using-dms-in-24-7-mining-operations.html" target="_blank" style="font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:15px;font-weight:700;color:#122B57;text-decoration:underline;text-underline-offset:3px;">Explore DMS</a></td></tr></table>
+                    <p class="body-copy story-body" style="margin:0 0 5px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:17px;font-weight:400;color:#536577;">Mining vehicles run 24/7 in demanding environments. Streamax DMS monitors fatigue and distraction in real time, keeping continuous watch and alerting drivers before risks escalate.</p>
+                  </td></tr><tr><td valign="bottom" style="font-family:Arial,Helvetica,sans-serif;"><a href="https://www.streamax.com/resources-blog-insight/using-dms-in-24-7-mining-operations.html" target="_blank" style="font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:15px;font-weight:700;color:#122B57;text-decoration:underline;text-underline-offset:3px;">Explore More</a></td></tr></table>
                 </td>
-                <td class="story-media-cell" width="44%" valign="top" style="width:44%;padding:26px 0 33px;font-family:Arial,Helvetica,sans-serif;font-size:0;line-height:0;">
+                <td class="story-media-cell" width="44%" valign="top" style="width:44%;padding:26px 0;font-family:Arial,Helvetica,sans-serif;font-size:0;line-height:0;">
                   <img class="story-image" src="assets/story-02-provided.png" width="203" height="193" alt="Mining vehicle operator working in a quarry" style="display:block;width:100%;max-width:203px;height:auto;border:0;box-shadow:0 5px 12px rgba(82,91,101,.24);" />
                 </td>
               </tr>
@@ -213,36 +214,29 @@
               <tr>
                 <td class="story-copy-cell" width="56%" valign="top" style="width:56%;padding:26px 24px 26px 0;font-family:Arial,Helvetica,sans-serif;">
                   <table class="story-copy-table" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="height:auto;"><tr><td valign="top" style="font-family:Arial,Helvetica,sans-serif;">
-                    <h3 class="story-title" style="margin:0 0 9px;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:19px;font-weight:700;color:#122B57;"><span class="story-highlight"><span class="story-highlight-text">Meet AD Max</span></span></h3>
-                    <p class="body-copy" style="margin:0 0 5px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:17px;font-weight:400;color:#536577;">Six-channel AI, night vision and real-time detection cover the road, cabin, rear, cargo area and blind spots, helping fleets move from fragmented video monitoring to proactive risk management.</p>
-                  </td></tr><tr><td valign="bottom" style="font-family:Arial,Helvetica,sans-serif;"><a href="https://www.streamax.com/products/AD-Max.html" target="_blank" style="font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:15px;font-weight:700;color:#122B57;text-decoration:underline;text-underline-offset:3px;">Explore AD Max</a></td></tr></table>
+                    <h3 class="story-title story-title-long" style="margin:0 0 9px;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:19px;font-weight:700;color:#122B57;">Prevents Students<br /><span class="story-highlight"><span class="story-highlight-text">From Being Left</span></span></h3>
+                    <p class="body-copy story-body" style="margin:0 0 5px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:17px;font-weight:400;color:#536577;">Streamax combines driver inspection, motion sensing and AI-based student detection to identify moving and stationary students and add multiple layers of protection after shutdown.</p>
+                  </td></tr><tr><td valign="bottom" style="font-family:Arial,Helvetica,sans-serif;"><a href="https://www.streamax.com/resources-blog-technology/prevent-students-from-being-left-on-buses.html" target="_blank" style="font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:15px;font-weight:700;color:#122B57;text-decoration:underline;text-underline-offset:3px;">Explore More</a></td></tr></table>
                 </td>
-                <td class="story-media-cell" width="44%" valign="top" style="width:44%;padding:26px 0 33px;font-family:Arial,Helvetica,sans-serif;font-size:0;line-height:0;">
-                  <img class="story-image" src="assets/story-03-provided.png" width="203" height="193" alt="Streamax AD Max flagship AI dashcam" style="display:block;width:100%;max-width:203px;height:auto;border:0;box-shadow:0 5px 12px rgba(82,91,101,.24);" />
+                <td class="story-media-cell" width="44%" valign="top" style="width:44%;padding:26px 0;font-family:Arial,Helvetica,sans-serif;font-size:0;line-height:0;">
+                  <img class="story-image" src="assets/story-03-provided.png" width="203" height="193" alt="School bus interior with a driver inspecting the seats" style="display:block;width:100%;max-width:203px;height:auto;border:0;box-shadow:0 5px 12px rgba(82,91,101,.24);" />
                 </td>
               </tr>
             </table>
 
             <table class="story-row" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
               <tr>
-                <td class="story-copy-cell" width="56%" valign="top" style="width:56%;padding:26px 24px 0 0;font-family:Arial,Helvetica,sans-serif;">
+                <td class="story-copy-cell" width="56%" valign="top" style="width:56%;padding:26px 24px 26px 0;font-family:Arial,Helvetica,sans-serif;">
                   <table class="story-copy-table" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="height:auto;"><tr><td valign="top" style="font-family:Arial,Helvetica,sans-serif;">
                     <h3 class="story-title" style="margin:0 0 9px;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:19px;font-weight:700;color:#122B57;">Prevent <span class="story-highlight"><span class="story-highlight-text">Low-Bridge Incidents</span></span></h3>
-                    <p class="body-copy" style="margin:0 0 5px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:17px;font-weight:400;color:#536577;">AI vision, OCR, GPS and vehicle-height sensing identify low-bridge clearance risks, supporting more accurate assessment and timely visual and voice alerts.</p>
-                  </td></tr><tr><td valign="bottom" style="font-family:Arial,Helvetica,sans-serif;"><a href="https://www.streamax.com/resources-blog-technology/ai-low-bridge-detection-hgv-prevention.html" target="_blank" style="font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:15px;font-weight:700;color:#122B57;text-decoration:underline;text-underline-offset:3px;">Explore Detection</a></td></tr></table>
+                    <p class="body-copy story-body" style="margin:0 0 5px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:17px;font-weight:400;color:#536577;">AI vision, OCR, GPS and vehicle-height sensing identify low-bridge clearance risks, supporting more accurate assessment and timely visual and voice alerts.</p>
+                  </td></tr><tr><td valign="bottom" style="font-family:Arial,Helvetica,sans-serif;"><a href="https://www.streamax.com/resources-blog-technology/ai-low-bridge-detection-hgv-prevention.html" target="_blank" style="font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:15px;font-weight:700;color:#122B57;text-decoration:underline;text-underline-offset:3px;">Explore More</a></td></tr></table>
                 </td>
-                <td class="story-media-cell" width="44%" valign="top" style="width:44%;padding:26px 0 7px;font-family:Arial,Helvetica,sans-serif;font-size:0;line-height:0;">
+                <td class="story-media-cell" width="44%" valign="top" style="width:44%;padding:26px 0;font-family:Arial,Helvetica,sans-serif;font-size:0;line-height:0;">
                   <img class="story-image" src="assets/story-04-provided.png" width="203" height="193" alt="Low-clearance bridge warning signs over a roadway" style="display:block;width:100%;max-width:203px;height:auto;border:0;box-shadow:0 5px 12px rgba(82,91,101,.24);" />
                 </td>
               </tr>
             </table>
-          </td>
-        </tr>
-
-        <!-- ================= FINAL CTA ================= -->
-        <tr>
-          <td align="center" style="padding:24px 28px 30px;background-color:#F3F7F9;font-family:Arial,Helvetica,sans-serif;">
-            <a class="cta-outline" href="https://www.streamax.com" target="_blank" style="display:inline-block;border:2px solid #ABCD03;border-radius:28px;padding:10px 24px;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:22px;font-weight:700;color:#ABCD03;background-color:#122B57;text-decoration:none;">See Active Safety in Action</a>
           </td>
         </tr>
 
